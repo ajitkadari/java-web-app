@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/part-of: java-web-app
 spec:
   params:
-  params:
   - name: gitops_server_address
     value: https://github.com/
   - name: gitops_repository_owner
