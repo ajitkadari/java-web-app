@@ -18,11 +18,13 @@ spec:
   - name: gitops_sub_path
     value: config/dev-ns/java-web-app
   - name: gitops_ssh_secret
-    value: "git-secret"
+    value: git-secret
   - name: gitops_commit_branch
-    value: "dev"
+    value: dev
   - name: gitops_user_name
-    value: "SupplyChain@TAP"
+    value: SupplyChain@TAP
+  - name: gitops_user_email
+    value: akadari@vmware.com
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
