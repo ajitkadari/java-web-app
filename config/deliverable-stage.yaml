@@ -17,18 +17,12 @@ metadata:
   namespace: workloads
 spec:
   params:
-    - name: gitops_server_address
-      value: https://github.com/
-    - name: gitops_repository_owner
-      value: ajitkadari
-    - name: gitops_repository_name
-      value: java-web-app
     - name: gitops_ssh_secret
-      value: "git-secret"
+      value: ""
     - name: gitops_sub_path
-      value: config/dev-ns/java-web-app
+      value: config/workloads/java-web-app
   source:
     git:
       ref:
-        branch: dev
-      url: https://github.com/ajitkadari/java-web-app.git
+        branch: stage
+      url: https://github.com/ajitkadari/tap-gitops.git
